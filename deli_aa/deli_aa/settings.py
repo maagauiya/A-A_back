@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'deli_aa.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'atech',
+        'CLIENT': {
+           'host': 'mongodb+srv://maagauiya:magauiyainc@cluster0.f7uie.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+        }
     }
 }
 
